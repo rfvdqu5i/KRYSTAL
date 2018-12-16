@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    height: 30px;
+    background: blue;
+    padding-left: 0px;
+}
+
+.item {
+    line-height: 30px;
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item:first-child {
+    display: none;
+}
+
+.item:last-child {
+    padding-right: 10px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item:hover {
+    background: yellow;
+}
+
+.item:hover a {
+    color: red;
+}
+
+@media (max-width: 678px) {
+    .item {
+        display: none;
+    }
+    .item:first-child {
+        display: block;
+    }
+}

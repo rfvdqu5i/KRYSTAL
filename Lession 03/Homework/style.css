@@ -1,0 +1,42 @@
+.tick {
+    width: 180px;
+    height: auto;
+    background-color: aqua;
+    float: left;
+    padding: 20px;
+}
+
+.tick img {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.tick p {
+    float: right;
+    margin: 0;
+    width: 85%;
+}
+
+#div1 {
+    width: 900px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px;
+    border-color: black;
+}
+
+#bang2 {
+    clear: both;
+}
+
+#phai {
+    
+    float: right;
+    width: 20%;
+}
+
+.trai {
+    float: left;
+    width: 80%;
+}

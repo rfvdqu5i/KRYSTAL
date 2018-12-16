@@ -1,0 +1,12 @@
+img {
+    width: 35%;
+    height: 35%;
+}
+
+#ul {
+    list-style: none;
+}
+.div {
+    float: right;
+    width: 60%;
+}

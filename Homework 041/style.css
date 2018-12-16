@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#menu-top {
+    width: 100%;
+    height: 40px;
+    background: green;
+    position: relative;
+}
+
+#menu-top #logo {
+    margin-left: 20px;
+    float: left;
+    width: auto;
+}
+
+#menu-top .nav-special {
+    width: 160px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    position: relative;
+} 
+
+#menu-top .nav-special img {
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+}
+
+#menu-top .nav-special a {
+    text-decoration: none;
+    color: white; 
+    float: right;
+    width: 100px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+#menu-top .nav {
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+
+#menu-top #nav-tin a {
+    border-left: 0px;
+    padding-left: 5px !important;
+}
+
+#menu-top .nav a {
+    text-decoration: none;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+
+#menu-top .search img {
+    float: right;
+    margin-right: 10px;
+    padding-top: 7px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#menu-top .nav ul {
+    list-style: none;
+    width: auto;
+    background: green;
+}
+
+#tin-tuc {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    background: green;
+    margin: 0;
+    padding: 0;
+    top: 41px;
+    left: 267px; 
+    display: none;
+}
+
+#tin-tuc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#tin-tuc li {
+    padding: 5px;
+    border-bottom: 0.5px solid white;
+}
+
+#tin-tuc li a {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-tin:hover #tin-tuc {
+    display: block;
+}
+
+#diem-nong {
+    position: absolute;
+    top: 0px;
+    left: -101px;
+    background: red;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#diem-nong li {
+    padding: 5px;
+    border-bottom: 0.5px solid white;
+}
+
+#diem-nong li a {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#diem-nong-cha:hover #diem-nong {
+    display: block;
+}
+
+#quan-su {
+    position: absolute;
+    top: 28px;
+    left: -101px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#quan-su li {
+    padding: 5px;
+    border-bottom: 0.5px solid white;
+}
+
+#quan-su li a {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+#quan-su-cha:hover #quan-su {
+    display: block;
+}
+
+#menu-top .search {
+    position: relative;
+}
+
+#text-box1 input {
+    position: absolute;
+    top: 2px;
+    right: 45px;
+    text-indent: 10px;
+    background: white;
+    width: 200px;
+    height: 30px;
+    border: 1px solid green;
+    border-radius: 15px; 
+}
+
+/*
+#danh-sach {
+    position: absolute;
+    top: 41px;
+    left: 106px;
+    background: green;
+    width: 160px;
+    display: none;
+}
+
+#danh-sach ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#danh-sach ul li {
+    
+    padding: 5px;
+    border-bottom: 0.5px solid white; 
+}
+
+#danh-sach ul li a {
+    padding-left: 5px;
+    color: white;
+    text-decoration: none; 
+}
+
+.menu-top .nav-special:hover #danh-sach {
+    display: block;
+}
+*/
+
