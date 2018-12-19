@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <script language="javascript">
-        var n = parseInt(prompt('Nhập số nguyên dương n', ''));
-        for(var i=1;i<=n;i++) {
-            for( var j=1;j<=i;j++) {
-                document.write("*");
-            }
-            document.write("<br/>");
-        }
-        document.write("<br/>");
-        for(var i=1;i<=n;i++) {
-            for( var j=1;j<=n;j++) {
-                document.write("*");
-            }
-            document.write("<br/>");
-        }
-        document.write("<br/>");
-        for(var i=n;i>=1;i--) {
-            for( var j=i;j>=1;j--) {
-                document.write("*");
-            }
-            document.write("<br/>");
-        }
-        document.write("<br/>");
-        for(var i = 1; i <= n; i++) {
-            for(var j = 1; j <= n; j++) {
-                if( i == 1 || i == n || j == 1 || j == n) {
-                    document.write("*");
-                    if(j == n) {
-                        document.write("<br/>");
-                    }       
-                }
-                else
-                    document.write("&nbsp;&nbsp;");
-            }
-        }
-    </script>
+    
 </head>
 <body>
-    
+    <input type="text" id="num" placeholder="Nhập số nguyên dương n ">
+    <br>
+    <input type="button" id="btn" value="Click">
+    <script language="javascript">
+        var button = document.getElementById('btn');
+        button.addEventListener('click', function(){
+            var n = document.getElementById('num').value;
+            for(var i=1;i<=n;i++) {
+                for( var j=1;j<=i;j++) {
+                    document.write("*");
+                }
+                document.write("<br/>");
+            }
+            document.write("<br/>");
+            for(var i=1;i<=n;i++) {
+                for( var j=1;j<=n;j++) {
+                    document.write("*");
+                }
+                document.write("<br/>");
+            }
+            document.write("<br/>");
+            for(var i=n;i>=1;i--) {
+                for( var j=i;j>=1;j--) {
+                    document.write("*");
+                }
+                document.write("<br/>");
+            }
+            document.write("<br/>");
+            for(var i = 1; i <= n; i++) {
+                for(var j = 1; j <= n; j++) {
+                    if( i == 1 || i == n || j == 1 || j == n) {
+                        document.write("*");
+                        if(j == n) {
+                            document.write("<br/>");
+                        }       
+                    }
+                    else
+                        document.write("&nbsp;&nbsp;");
+                }
+            }
+        });
+    </script>
 </body>
 </html>
