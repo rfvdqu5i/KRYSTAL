@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script language="javascript">
+        var tong = 0;
+        // Lấy thông tin từ người dùng
+        var k = parseInt(prompt("Nhập số k"));
+        var n = parseInt(prompt("Nhập số n"));
+        var m = parseInt(prompt("Nhập số m"));
+
+        for( var i = n; i <= m; i++) {
+            if( i % k == 0) {
+                tong = tong + i;
+            }
+        }
+
+        // In ra màn hình
+        alert("Tổng các số chia hết cho " + k + " trong khoảng từ " + n + " đến " + m + " là " + tong );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

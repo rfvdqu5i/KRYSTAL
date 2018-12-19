@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script language="javascript">
+//        Hàm tính giai thừa của n
+        var i = 1;
+        var tong = 0;
+        function giaithua(n) {
+            for( var i = 1; n >= 1; n-- ) {
+                i = i * n;
+            }
+            return i;
+        }
+
+        var n = prompt('Nhập vào số nguyên dương n', '');
+        
+        for( var j = 1; j <= n; j++) {
+            tong = tong + 1.0/giaithua(j);
+        }
+        
+        alert(tong);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

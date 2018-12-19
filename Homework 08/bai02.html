@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script language="javascript">
+        var n = parseInt(prompt('Nhập số nguyên dương n', ''));
+        var i = 0;
+        var tong = 0, dem = 0;
+        do {
+            if(i % 2 == 0) {
+                tong += i;
+                dem++;
+            } 
+            i++;  
+        } while(dem <= n);
+        alert("Tổng của " + n + " số đầu tiên là " + tong);
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
