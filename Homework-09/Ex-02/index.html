@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <table border="1px" cellspacing="10px" cellpadding="10px">
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="check" type="checkbox">
+                </td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </table>
+        <input id="check-all" type="button" onclick="checkall()" value="Check All">
+        <input id="check-out" type="button" onclick="checkout()" value="Uncheck All">
+        <script type="text/javascript">
+            function checkall() {
+                var check = document.getElementsByClassName('check');
+                for(var i=0; i <= check.length; i++) {
+                    check[i].checked = true;
+                }
+            }
+            function checkout() {
+                var check = document.getElementsByClassName("check");
+                for(var i=0; i <= check.length; i++) {
+                    check[i].checked = false;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

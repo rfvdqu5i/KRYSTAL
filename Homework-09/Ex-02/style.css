@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#check-all, #check-out {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    background: #fff;
+    color: #00FFFF;
+    border: 1px solid #00FFFF;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#check-all:hover {
+    background: #00FFFF;
+    color: #fff;
+}
+
+#check-out:hover {
+    background: #00FFFF;
+    color: #fff;
+}

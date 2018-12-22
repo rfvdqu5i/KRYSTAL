@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <p>Cỡ chữ: </p>
+            <input class="btn" type="button" name="" value="Default" onclick="Def()">
+            <input class="btn" type="button" name="" value="Increase" onclick="Increase()">
+            <input class="btn" type="button" name="" value="Decrease" onclick="Decrease()">
+        </div>
+        <div>
+            <p id="txt" style="font-size: 10px">Change</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function Def() {
+            var txt = document.getElementById("txt");
+            var size = parseFloat(txt.style.fontSize);
+            txt.style.fontSize = "30px";
+            txt.style.color = 'red';
+        }
+        
+        function Increase() {
+            var txt = document.getElementById("txt");
+            var size = txt.style.fontSize;
+            alert(size);
+            txt.style.fontSize = parseFloat(size) * 2;
+            txt.style.color = 'blue';
+        }
+        
+        function Decrease() {
+            var txt = document.getElementById("txt");
+            var size = parseFloat(txt.style.fontSize);
+            size = size / 2;
+            alert(size);
+            txt.style.fontSize = 'size'; 
+//            var img = document.getElementsByTagName("img");
+//            var width = parseFloat(img[0].width);
+//            alert(img[0].width);
+//            img[0].width = width / 2;
+//            img[0].style.opacity = "0.5";
+        }
+    </script>
+</body>
+</html>
