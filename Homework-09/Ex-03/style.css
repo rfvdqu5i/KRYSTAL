@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#tab-contents ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0; 
+}
+
+#tab-contents li {
+    display: inline-block;
+}
+
+#tab-contents input {
+    background: white;
+    border: 1px solid aqua;
+    border-bottom: none;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#tab-contents input:hover {
+    background: aqua;
+    color: white;
+}
+
+.box {
+    border: 1px solid aqua;
+    padding: 20px;
+    height: auto;
+    display: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box h2 {
+    margin: 0;
+}

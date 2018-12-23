@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div id="tab-menu">
+        <nav id="tab-contents">
+            <ul>
+                <li>
+                    <input type="button" name="" value="Tab 1" onclick="click1()">
+                </li>
+                <li>
+                    <input type="button" name="" value="Tab 2" onclick="click2()">
+                </li>
+                <li>
+                    <input type="button" name="" value="Tab 3" onclick="click3()">
+                </li> 
+            </ul>           
+        </nav>  
+        <div id="tab-item-1" class="box">
+            <h2>Selection 01</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsum aperiam, placeat officiis magni fuga ullam quia rerum harum nihil.</p>
+        </div>
+        <div id="tab-item-2" class="box">
+            <h2>Selection 02</h2>
+            <p>Ratione, ullam libero, vero alias quis laborum tempore quibusdam fugiat quas est officiis eum facilis quaerat id quo dolorum.</p>
+        </div> 
+        <div id="tab-item-3" class="box">
+            <h2>Selection 03</h2>
+            <p>Totam tempore explicabo quisquam, dolor qui aliquam quia rerum quos laudantium, similique, ullam temporibus iusto. Blanditiis quo, fuga itaque minima dolor eligendi tempore voluptatum sit placeat, soluta a.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function click1() {
+            var input = document.getElementsByTagName("input");
+            input[0].style.background = "white";
+            input[0].style.color = "aqua";
+            input[1].style.background = "aqua";
+            input[1].style.color = "white";
+            input[2].style.background = "aqua";
+            input[2].style.color = "white";
+            var box = document.getElementsByClassName("box");
+            box[0].style.display = "block";
+            box[1].style.display = "none";
+            box[2].style.display = "none";
+        }
+        function click2() {
+            var input = document.getElementsByTagName("input");
+            input[0].style.background = "aqua";
+            input[0].style.color = "white";
+            input[1].style.background = "white";
+            input[1].style.color = "aqua";
+            input[2].style.background = "aqua";
+            input[2].style.color = "white";
+            var box = document.getElementsByClassName("box");
+            box[0].style.display = "none";
+            box[1].style.display = "block";
+            box[2].style.display = "none";
+        }
+        function click3() {
+            var input = document.getElementsByTagName("input");
+            input[0].style.background = "aqua";
+            input[0].style.color = "white";
+            input[1].style.background = "aqua";
+            input[1].style.color = "white";
+            input[2].style.background = "white";
+            input[2].style.color = "aqua";
+            var box = document.getElementsByClassName("box");
+            box[0].style.display = "none";
+            box[1].style.display = "none";
+            box[2].style.display = "block";
+        }
+        var input = document.getElementsByTagName("input");
+        input[1].style.background = "aqua";
+        input[1].style.color = "white";
+        input[2].style.background = "aqua";
+        input[2].style.color = "white";
+        var box = document.getElementsByClassName("box");
+        box[0].style.display = "block";
+        box[1].style.display = "none";
+        box[2].style.display = "none";
+    </script>
+</body>
+</html>
