@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .section {
+            height: 300px;
+            width: 100%;
+        }
+        
+        #backToTop {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>Menu</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+    <div id="section">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis ullam corporis modi ut culpa consectetur doloremque autem dolores vero ipsam nobis maxime libero temporibus voluptate aspernatur, eligendi a voluptatum.
+    </div>
+    
+    <a id="backToTop" href="#menu">Click</a>
+    
+    <script type="text/javascript">
+        document.getElementById("backToTop").style.display="none";
+        window.addEventListener("scroll", function(){
+            if(window.scrollY > 500) {
+                document.getElementById("backToTop").style.display =" block";
+            }
+            else
+                document.getElementById("backToTop").style.display = "none";
+        });
+    </script>
+</body>
+</html>

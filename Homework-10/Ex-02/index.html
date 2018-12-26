@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <form action="#">
+            <div class="box">
+                <p>HỌ TÊN:</p>
+                <input id="user" type="text" placeholder="Nguyễn Văn A" autocomplete="off">
+                <span id="nameer" class="er"></span>
+            </div>
+            <div class="box sex">
+                <p>GIỚI TÍNH:</p>
+                <input class="check" type="radio" name="gen"> <span>Nam</span>
+                <input class="check" type="radio" name="gen"> <span>Nữ</span>
+                <span id="sexer" class="er"></span>
+            </div>
+            <div class="box">
+                <p>EMAIL:</p>
+                <input id="email" type="text" placeholder="abc@example.com" autocomplete="off">
+                <span id="emailer" class="er"></span>
+            </div>
+            <div class="box">
+                <p>ĐIỆN THOẠI:</p>
+                <input id="phone" type="text" placeholder="0123456789" autocomplete="off">
+                <span id="phoneer" class="er"></span>
+            </div>
+            <div class="box">
+                <p>MẬT KHẨU:</p>
+                <input id="pass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                <span id="passer" class="er"></span>
+            </div>
+            <div class="box">
+                <p>XÁC NHẬN MẬT KHẨU:</p>
+                <input id="repass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                <span id="repasser" class="er"></span>
+            </div>
+            <div class="btn">
+                <input id="sign_up" type="button" value="Sign in" onclick="sign()">
+                <input id="del" type="button" value="Xóa" onclick="del()">
+            </div>
+        </form>
+    </div>
+    
+    <script type="text/javascript"> 
+        function sign() {
+            var name = document.getElementById('name').value;
+            var check = document.getElementsByClassName('check');
+            var email = document.getElementsByClassName('email').value;
+            var phone = document.getElementsByClassName('phone').value;
+            if(name == ""){
+                document.getElementById('nameer').innerHTML = "Mời bạn nhập tên";
+                return false;
+            }
+            if((name.length > 0) && (name.length < 7)){
+                document.getElementById('nameer').innerHTML = "Mời bạn nhập đầy đủ họ tên";
+                return false;
+            }
+            if(name.length > 7){
+                document.getElementById('nameer').innerHTML = "";
+                return true;
+            }
+            if((check[0].checked == false) && (check[1].checked == false)) {
+                document.getElementById('sexer').innerHTML = "Mời bạn chọn giới tính";
+                return false;    
+            }
+            if(email == "") {
+                document.getElementById('emailer').innerHTML = "Mời bạn nhập email";
+                return false;
+            }
+            if(email.indexOf('@') <= 0) {
+                document.getElementById('emailer').innerHTML = "Mời bạn nhập đúng email";
+                return false;
+            }
+            if((email.charAt(email.length - 4)!=".") && (email.charAt(email.length - 3)!=".")) {
+                document.getElementById('emailer').innerHTML = "Mời bạn nhập đúng email";
+                return false;
+            }
+            if(phone == "") {
+                document.getElementById('phoneer').innerHTML = "Mời bạn nhập số điện thoại";
+                return false;
+            }
+            if(isNaN(phone)) {
+                document.getElementById('phoneer').innerHTML = "Số điện thoại không chứa chữ cái";
+                return false;
+            }
+            if(phone.length <=8) {
+                document.getElementById('phoneer').innerHTML = "Mời bạn nhập đúng số điện thoại";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
