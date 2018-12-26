@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		span{
+			color:red;
+		}
+		input{
+			margin : 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="#">
+		<input type="text" id="name2" class="name1" placeholder="Name"><span class="nameerr"></span> <br>
+		<input type="email" class="email" placeholder="email"><span class="emailerr"></span> <br>
+		<input type="password" class="password" placeholder="password"><span class="passworderr"></span> <br>
+	</form>
+
+	<script type="text/javascript">
+		var name1 = document.getElementsByClassName('name1')[0];
+		name1.addEventListener("blur", function(){
+			if(name1.value.trim()==''){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Mời bạn nhập tên";
+			}
+			else if(name1.value.length<3){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Tên Phải lớn hơn 3 kí tự";
+			}
+			else{
+				document.getElementsByClassName('nameerr')[0].innerHTML="";
+			}
+		});
+
+		var name =document.getElementById('name2');
+
+		name.addEventListener('blur', function(){
+			if(name.value.trim()==''){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Mời bạn nhập tên";
+			}
+			else if(name.value.length<8){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Tên Phải lớn hơn 3 kí tự";
+			}
+			else{
+				document.getElementsByClassName('nameerr')[0].innerHTML="";
+			}
+		})
+	</script>
+</body>
+</html>

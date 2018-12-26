@@ -10,73 +10,64 @@
     <div id="slide">
         <div class="img active">
             <img src="img/img-03.jpg" alt="">
-            <button class="btn right" onclick="click()"><i class="fas fa-chevron-right"></i></button>
-            <button class="btn left" onclick="click()"><i class="fas fa-chevron-left"></i></button>
-            <div class="square">
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-            </div>
         </div>
-        <div class="img active">
+        <div class="img">
             <img src="img/img-04.jpg" alt="">
-            <button class="btn right" onclick="click()"><i class="fas fa-chevron-right"></i></button>
-            <button class="btn left" onclick="click()"><i class="fas fa-chevron-left"></i></button>
-            <div class="square">
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-            </div>
         </div>
-        <div class="img active">
+        <div class="img">
             <img src="img/img-02.jpg" alt="">
-            <button class="btn right" onclick="click()"><i class="fas fa-chevron-right"></i></button>
-            <button class="btn left" onclick="click()"><i class="fas fa-chevron-left"></i></button>
-            <div class="square">
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-            </div>
         </div>
-        <div class="img active">
+        <div class="img">
             <img src="img/img-01.jpg" alt="">
-            <button class="btn right" onclick="click()"><i class="fas fa-chevron-right"></i></button>
-            <button class="btn left" onclick="click()"><i class="fas fa-chevron-left"></i></button>
-            <div class="square">
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-                <a href="#"><i class="fas fa-square"></i></a>
-            </div>
+        </div>
+        <button class="btn right" onclick="right()"><i class="fas fa-chevron-right"></i></button>
+        <button class="btn left" onclick="left()"><i class="fas fa-chevron-left"></i></button>
+        <div class="square">
+            <a class="dot pactive" onclick="btnn(0)" href="#"><i class="fas fa-square"></i></a>
+            <a class="dot" onclick="btnn(1)" href="#"><i class="fas fa-square"></i></a>
+            <a class="dot" onclick="btnn(2)"href="#"><i class="fas fa-square"></i></a>
+            <a class="dot" onclick="btnn(3)" href="#"><i class="fas fa-square"></i></a>
         </div>
     </div>
     
     <script type="text/javascript">
-//        var imgs = document.getElementsByClassName("img");
-//        var btn = document.getElementsByClassName("btn");
-//        for( var i = 0; i < imgs.length; i++) {
-//            imgs[i].addEventListener("click",function(){
-//                var active = document.getElementsByClassName("active")[0];
-//                active.className = "img";
-//                this.parentNode.className = "img active";
-//            });
-//        }
-        var i = 0;
-        var time = 1000;
-        var imgs = document.getElementsByClassName("img");
-        function changeImage(){
-            document.slide.src = imgs[i];
-            if (i < imgs.length - 1) {
-                i++;
-            } else {
-                i = 0;
-            }
-            setTimeout("changeImage()", time)''
+        var dem = 0;
+        var img = document.getElementsByClassName('img');
+        var button = document.getElementsByClassName('dot');
+        function left() {
+            dem--;
+            for (var i = img.length - 1; i >= 0; i--) {
+				img[i].className = 'img';
+				button[i].className = 'dot';
+			}
+			if(dem < 0){
+				dem = img.length - 1;
+			}
+			img[dem].className='img active';
+			button[dem].className='dot pactive';
         }
-        window.onload = changeImage();
+        function right() {
+            dem++;
+            for (var i = img.length - 1; i >= 0; i--) {
+				img[i].className = 'img';
+				button[i].className = 'dot';
+			}
+			if(dem > img.length - 1){
+				dem = 0;
+			}
+			img[dem].className='img active';
+			button[dem].className='dot pactive';
+        }
+        function btnn(n){
+			for (var i = img.length-1; i >= 0; i--) {
+				img[i].className='img';
+				button[i].className='dot';
+			}
+			dem = n;
+			img[dem].className='img active';
+			button[dem].className='dot pactive';
+		}
+		window.setInterval(function(){ right(); }, 3000);
     </script>
 </body>
 </html>
