@@ -88,7 +88,6 @@
                 return false;
             } else {
                 document.getElementById('emailer').innerHTML = "";
-                email.focus;
                 return true;
             }
         }
@@ -142,6 +141,10 @@
             }
         }
         
+        if((checkname() == true) && (checksex() == true) && (checkphone() == true) && (checkpass() == true) && (checkrepass() == true)) {
+            var success = "1";
+        }
+        
         function sign() {
             var name = document.getElementById('name').value;
             var check = document.getElementsByClassName('check');
@@ -171,12 +174,9 @@
             if(repass == ""){
                 document.getElementById('repasser').innerHTML = "Yêu cầu xác nhận lại mật khẩu";
             }
-//            if((checkname() == true) && (checksex() == true) && (checkphone() == true) && (checkpass() == true) && (checkrepass() == true)) {
-//                alert("Đăng ký thành công");
-//            }
-//            && (checkemail() == true)
-            if(checkname() == true) {
-                alert("Tên đúng rồi");
+            
+            if(success == "1") {
+                alert("Đăng ký thành công");
             }
         }
         
@@ -194,7 +194,8 @@
             document.getElementById('repass').value = "";
             document.getElementById('passer').innerHTML = "";
             document.getElementById('repasser').innerHTML = "";
-        }    
+        } 
+        
     </script>
 </body>
 </html>

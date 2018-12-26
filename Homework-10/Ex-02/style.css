@@ -18,7 +18,7 @@ body {
     border: 0.5px solid blue;
     margin-bottom: 10px;
     padding-left: 15px;
-/*    border-radius: 10px;*/
+    position: relative;
 }
 
 .box p {
@@ -28,6 +28,11 @@ body {
 .box input {
     border: none;
     outline: 0;
+    width: 480px;
+}
+
+.check {
+    width: auto !important;
 }
 
 .btn {
@@ -54,8 +59,9 @@ body {
 }
 
 .er {
+    position: absolute;
     color: red;
     font-weight: bold;
-    float: right;
+    right: 0;
     margin-right: 10px;
 }
