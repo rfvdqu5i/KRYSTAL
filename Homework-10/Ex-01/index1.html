@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var next = document.getElementById('next');
+        next.addEventListener("click", function(){
+            var active = document.getElementsByClassName('active');
+            active.className = "";
+            if(active.nextElementSibling.src != underfined)
+                active.nextElementSibling.className = "active";
+            else document.getElementsByTagName('img')[0].className = "active";
+        });
+        
+        var back = document.getElementById('back');
+        back.addEventListener('click', function(){
+            var active = document.getElementsByClassName('active');
+            active.className = "";
+            var imgs = document.getElementsByTagName('img);
+            if(active.nextElementSibling != null)
+                active.nextElementSibling.className = "active";
+            else imgs[imgs.length - 1].className = "active";   
+        });
+    </script>
+</body>
+</html>

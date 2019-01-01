@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container {
+    width: 80%;
+    background: gray;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#logo {
+    text-align: center;
+}
+
+#ako {
+    font-family: 'Charm', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+#vec {
+    font-family: 'Charm', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+#slo {
+    color: white;
+}
+
+.fa-long-arrow-alt-right {
+    color: green;
+    margin-right: 10px;
+}
+
+#box {
+    background: white;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#box li {
+    border-bottom: 1px solid black;
+}
+
+#box li p {
+    display: none;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+#title {
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+}
+
+#title span {
+    line-height: 30px;   
+    font-weight: bold;
+    color: green;
+}
+
+.minus {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px !important;
+    float: left;
+    background: green;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.plus {
+    width: 20px;
+    height: 20px;
+    text-align: center; 
+    line-height: 20px !important;
+    float: left;
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}

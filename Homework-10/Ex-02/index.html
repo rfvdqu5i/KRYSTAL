@@ -11,7 +11,7 @@
         <form action="#">
             <div class="box">
                 <p>HỌ TÊN:</p>
-                <input id="name" type="text" placeholder="Nguyễn Văn A" autocomplete="off" onchange="checkname()" onblur="checkname()">
+                <input id="name" type="text" placeholder="Nguyễn Văn A" autocomplete="off"  onblur="checkname()">
                 <span id="nameer" class="er"></span>
             </div>
             <div class="box sex">
@@ -22,22 +22,22 @@
             </div>
             <div class="box">
                 <p>EMAIL:</p>
-                <input id="email" type="email" placeholder="abc@example.com" autocomplete="off" onchange="checkemail()" onblur="checkemail()">
+                <input id="email" type="email" placeholder="abc@example.com" autocomplete="off" onblur="checkemail()">
                 <span id="emailer" class="er"></span>
             </div>
             <div class="box">
                 <p>ĐIỆN THOẠI:</p>
-                <input id="phone" type="text" placeholder="0123456789" autocomplete="off" onchange="checkphone()" onblur="checkphone()">
+                <input id="phone" type="text" placeholder="0123456789" autocomplete="off" onblur="checkphone()">
                 <span id="phoneer" class="er"></span>
             </div>
             <div class="box">
                 <p>MẬT KHẨU:</p>
-                <input id="pass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" onchange="checkpass()" onblur="checkpass()">
+                <input id="pass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" onblur="checkpass()">
                 <span id="passer" class="er"></span>
             </div>
             <div class="box">
                 <p>XÁC NHẬN MẬT KHẨU:</p>
-                <input id="repass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" onchange="checkrepass()" onblur="checkrepass()">
+                <input id="repass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"  onblur="checkrepass()">
                 <span id="repasser" class="er"></span>
             </div>
             <div class="btn">
@@ -48,6 +48,7 @@
     </div>
     
     <script type="text/javascript">
+        var dem=0;
         function checkname() {
             var name = document.getElementById('name').value; 
             if(name == ""){
@@ -59,8 +60,10 @@
                 return false;
             } else
             if(name.length > 7){
-                document.getElementById('nameer').innerHTML = "";
+                document.getElementById('nameer').innerHTML = "";   dem++;
+              
                 return true;
+             
             }
         }
         function checksex() {
@@ -70,26 +73,27 @@
                 return false;    
             }
             if((check[0].checked == true) || (check[1].checked == true)) {
-                document.getElementById('sexer').innerHTML = "";
+                document.getElementById('sexer').innerHTML = "";dem++;
                 return true;    
+                
             }
         }
         
         function checkemail() {  
-            var email = document.getElementById('email').value;
-            if(email == "") {
-                document.getElementById('emailer').innerHTML = "Yêu cầu nhập email";
-                return false;
-            }
-            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            if (!filter.test(email.value)) {
-                document.getElementById('emailer').innerHTML = "Yêu cầu nhập đúng email";
-                email.focus;
-                return false;
-            } else {
-                document.getElementById('emailer').innerHTML = "";
-                return true;
-            }
+//            var email = document.getElementById('email').value;
+//            if(email == "") {
+//                document.getElementById('emailer').innerHTML = "Yêu cầu nhập email";
+//                return false;
+//            }
+//            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//            if (!filter.test(email.value)) {
+//                document.getElementById('emailer').innerHTML = "Yêu cầu nhập đúng email";
+//                email.focus;
+//                return false;
+//            } else {
+//                document.getElementById('emailer').innerHTML = "";
+//                return true;
+//            }
         }
         
         function checkphone() {
@@ -107,8 +111,9 @@
                 return false;
                 } else
                 if(phone.length > 8) {
-                    document.getElementById('phoneer').innerHTML = "";
+                    document.getElementById('phoneer').innerHTML = ""; dem++;
                     return true;
+                   
                 }
             }
         }
@@ -121,8 +126,10 @@
             } else
             if(pass.length < 5){
                 document.getElementById('passer').innerHTML = "Yêu cầu nhập lớn hơn 5 ký tự";
+               
                 return false;
             }
+            dem++;
         }
         
         function checkrepass() {
@@ -133,18 +140,17 @@
                 return false;
             } else
             if(pass == repass){
-                document.getElementById('repasser').innerHTML = "";
+                document.getElementById('repasser').innerHTML = "";   dem++;
                 return true;
+             
+               
             } else {
                 document.getElementById('repasser').innerHTML = "Mật khẩu chưa chính xác";
                 return false;
             }
+            
+           
         }
-        
-        if((checkname() == true) && (checksex() == true) && (checkphone() == true) && (checkpass() == true) && (checkrepass() == true)) {
-            var success = "1";
-        }
-        
         function sign() {
             var name = document.getElementById('name').value;
             var check = document.getElementsByClassName('check');
@@ -171,11 +177,14 @@
             if(pass == ""){
                 document.getElementById('passer').innerHTML = "Yêu cầu nhập mật khẩu";
             }
+            else{
+                 document.getElementById('passer').innerHTML = "";
+            }
             if(repass == ""){
                 document.getElementById('repasser').innerHTML = "Yêu cầu xác nhận lại mật khẩu";
             }
             
-            if(success == "1") {
+            if(dem == 5) {
                 alert("Đăng ký thành công");
             }
         }
