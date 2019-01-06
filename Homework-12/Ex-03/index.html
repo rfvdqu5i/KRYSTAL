@@ -3,27 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="icon" href="img/icon.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
+
 <body>
-    <div id="header">
-        <div id="logo">
-            <img src="img/logo.svg" alt="">
+    <div id="content">
+        <div class="form-advanced">
+            <div id="head-form-panel">
+                <div id="account" class="tab">1. Account</div>
+                <div id="profile" class="tab">2. Profile</div>
+                <div id="warning" class="tab">3. Warning</div>
+                <div id="finish" class="tab">4. Finish</div>
+            </div>
+            <div id="content-form-panel">
+                <fieldset id="frm-account" class="frm">
+                    <legend>Account information</legend>
+                    <label for="username">User name *</label>
+                    <input type="text" id="username">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password">
+                    <label for="cfm-password">Confirm Password *</label>
+                    <input type="password" id="cfm-password">
+                    <p>(*) Mandatory</p>
+                </fieldset>
+                <fieldset id="frm-profile" class="frm">
+                    <legend>Profile Information</legend>
+                    <label for="firstname">First name *</label>
+                    <input type="text" id="firstname">
+                    <label for="lastname">Last name *</label>
+                    <input type="text" id="lastname">
+                    <label for="email">Email *</label>
+                    <input type="text" id="email">
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                    <label for="age">Age (The warning step will show up if age is less than 18) *</label>
+                    <input type="text" id="age">
+                    <p>(*) Mandatory</p>
+                </fieldset>
+                <fieldset id="frm-warning" class="frm">
+                    <div id="warning-c" class="warning-content">
+                        <legend> You are to young </legend>
+                        <p>Please go away ;-)</p>
+                    </div>
+                    <div id="continue-c" class="warning-content">
+                        <legend> Terms and Conditions</legend>
+                        <input type="checkbox" id="check"> I agree with the Terms and Conditions.
+                    </div>
+                </fieldset>
+            </div>
+            <div class="btn-frm-advanced">
+                <button id="previous">Previous</button>
+                <button id="next">Next</button>
+            </div>
         </div>
-        <i class="fas fa-bars fa-2x bar"></i>
-        <p>Menu above built with phis plugin including Mega Menu.</p>
-    </div>
-    <div id="container">
-        <div id="left">
-            <h2>No coding knowledge needed.</h2>
-            <p>Responsive Menu is a simple WordPress plugin that allows you to convert your current theme menu into a mobile ready, fully W3C compliant responsive design in seconds.</p>
-            <button>BUY NOW</button>
-            <button>VIEW EXAMPLES</button>
-        </div>
-    </div>
-    <div id="footer">
-        
     </div>
 </body>
 </html>

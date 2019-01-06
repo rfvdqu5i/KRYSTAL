@@ -1,72 +1,98 @@
 body {
     margin: 0;
     padding: 0;
-    position: relative;
+    font-family: 'Quicksand', sans-serif;
 }
 
-#header {
+#content {
     width: 100%;
-    height: 110px;
-    background: rgb(192,192,192,0.4);
-    position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
+    padding-top: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
 }
 
-#logo img {
+.form-advanced {
+    width: 100%;
+    /*background: gray;*/
+}
+
+#head-form-panel {
     height: 60px;
-    margin-top: 25px;
-    margin-left: 60px;
-    float: left;
-}
-
-#header .bar {
-    float: right;
-    margin-top: 30px;
-    margin-right: 70px;
-    color: white;
-}
-
-#header p {
-    position: absolute;
-    bottom: 10px;
-    right: 80px;
-    margin: 0;
-    color: white;
-}
-
-#container {
-    background: linear-gradient(to right, #8595AE, #CC7B20);
     width: 100%;
-    height: 1000px;
-    
+    /*background: blue;*/
+    padding-right: 10px;
+    /*padding-left: 10px;*/
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-#left {
-    width: 50%;
+#head-form-panel .tab {
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+    margin-right: 10px;
+    background: #2184BE;
     color: white;
-    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#left h2 {
-    margin: 0;
+#content-form-panel {
+    background: #EEEEEE;
+    padding: 10px;
+    padding-bottom: 100px;
+    border-radius: 4px;
 }
 
+fieldset {
+    border: 0px;
+}
 
+legend {
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #e5e5e5;
+}
 
+fieldset label, input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+fieldset input {
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+.frm {
+    display: none;
+}
 
+.warning-content {
+    display: none;
+}
 
+.btn-frm-advanced {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+}
 
-
-
-
-
-
-
-
-
-
-
+.btn-frm-advanced button {
+    margin-left: 5px;
+    padding: 7px;
+    font-size: 18px;
+    background: #2184be;
+    border: 1px solid #2184be;
+    cursor: pointer;
+    border-radius: 4px;
+}
