@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!--    <script src="jquery-3.2.1.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <style>
+        label.error,.red{
+          color: red;
+        }
+        #formDemo{
+          width: 50%;
+          margin: 0 auto;
+        }
+        input{
+         margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" accept-charset="utf-8" id="formDemo">
+		<fieldset>
+			<legend>ZentGroup</legend><br>
+			<div>
+				<label>Họ<span class="red">(*)</span>:</label><br>
+				<input name="ho" type="text" placeholder="Vui lòng nhập họ" required>
+			</div>
+			<div>
+				<label>Tên<span class="red">(*)</span>:</label><br>
+				<input name="ten" type="text" placeholder="Vui lòng nhập tên" required>
+			</div>
+			<div>
+				<label>Địa chỉ<span class="red">(*)</span>:</label><br>
+				<input name="diachi" type="text" placeholder="Vui lòng nhập địa chỉ" required>
+			</div>
+			<button type="submit">Gửi</button>
+		</fieldset>
+	</form>
+    <script type="text/javascript">
+        $(document).ready(function() {
+ 
+        //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+        $("#formDemo").validate({
+            rules: {
+                ho: "required",
+                ten: "required",
+                diachi: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                ho: "Vui lòng nhập họ",
+                ten: "Vui lòng nhập tên",
+                diachi: {
+                    required: "Vui lòng nhập địa chỉ",
+                    minlength: "Địa chỉ quá ngắn"
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>

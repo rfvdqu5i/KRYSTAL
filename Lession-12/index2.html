@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
+<!--    <script type="text/javascript" src="js/script.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script>
+	$(document).ready(function() {
+		$('.counter').counterUp({
+			delay: 10,
+			time: 1000
+		});
+	});
+</script>
+</head>
+<body>
+    <h3 align="center">Counter up</h3>
+    <span class="counter" style="margin-left:20%; ">1,234,567.00</span>
+    <span class="counter" style="margin-left:20%; ">1.99</span>
+    <span class="counter" style="margin-left:20%; ">12345</span>
+</body>
+</html>
