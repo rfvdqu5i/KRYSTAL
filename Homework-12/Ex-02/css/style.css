@@ -7,22 +7,24 @@ body {
 }
 
 #menu {
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);    
+    background: linear-gradient(217deg, rgba(255,0,0), rgba(255,0,0,0)),
+            linear-gradient(127deg, rgba(0,255,0), rgba(0,255,0,0)),
+            linear-gradient(336deg, rgba(0,0,255), rgba(0,0,255,0));    
     width: 0;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    overflow-x: hidden;
     transition: 0.7s;
-    opacity: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: scroll;
 }
 
 #menu img {
-    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
     width: 100px;
 }
 
@@ -42,17 +44,25 @@ body {
     height: 40px;
     line-height: 40px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .menu-btn:hover {
     background: rgba(0,0,0,0.2);
 }
 
-#sup {
-    height: 160px;
+.sup {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.active {
+    height: 160px !important;    
 }
 
 .support-btn {
+    margin: 0;
     padding-left: 80px;
     width: auto;
     height: 40px;
@@ -60,8 +70,8 @@ body {
     font-size: 13px;
 }
 
-.account {
-    margin-top: 160px;    
+.support-btn:hover {
+    background: rgba(0,0,0,0.2);
 }
 
 .heart {
@@ -69,6 +79,18 @@ body {
     margin-right: 20px;
     color: red;
     margin-top: 11px;
+}
+
+.text {
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.text input {
+    width: 650px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0.1px solid black;
 }
 
 #header {
