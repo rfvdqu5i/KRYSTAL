@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <div id="menu">
+        <div class="overlay"></div>
         <img src="img/main-activation.svg" alt="">
         <h2>Responsive Menu</h2>
         <p>No coding knowledge needed</p>
@@ -23,8 +26,7 @@
                 <div class="support-btn"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Forum</div>
                 <div class="support-btn"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;&nbsp;FAQ</div>
                 <div class="support-btn"><i class="fas fa-pen-nib"></i>&nbsp;&nbsp;&nbsp;Contact</div>
-            </div>
-            
+            </div>          
         </div>
         <div class="menu-btn"><i class="fas fa-user-alt"></i>&nbsp;&nbsp;&nbsp;Account</div>
         <div class="menu-btn"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Checkout</div>
@@ -34,10 +36,10 @@
             <div id="logo">
                 <img src="img/logo.svg" alt="">
             </div>
-            <a href="#" onclick="openslide()">
+            <a id="open" href="#" onclick="openslide()">
                 <i class="fas fa-bars fa-2x bar"></i>
             </a>
-            <a href="#" onclick="closeslide()">
+            <a id="close" href="#" onclick="closeslide()">
                 <i class="fas fa-times fa-2x cancel"></i>
             </a>
             <p>Menu above built with phis plugin including Mega Menu.</p>

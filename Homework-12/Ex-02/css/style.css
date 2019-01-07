@@ -3,12 +3,21 @@ body {
     padding: 0;
     position: relative;
     font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
 }
 
 #menu {
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);    
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.7s;
 }
 
 #menu img {
