@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-item {
+    font-size: 14px;
+    border-right: 0.1px solid black;
+}
+
+.not {
+    border-right: 0px;
+    margin-right: 20px;
+}
+
+.nav-item:last-child {
+    border-right: 0px;
+}
+
+.fa-bell {
+    margin-right: 10px;
+}
+
+.carousel-item img {
+    width: 500px !important;
+} 
+
+.danhgia {
+    margin-top: 40px;
+}
+

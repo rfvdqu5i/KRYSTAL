@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.footer a {
+    color: white;
+}
+
+#container {
+        
+    
+}
+
+.box {
+    width: 400px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    background: white;
+}
+
+.box-woman {
+    background: aquamarine;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.box-child {
+    width: auto;
+    background: light;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
