@@ -39,7 +39,7 @@
 }
 
 .nav-link {
-    transition-delay: 3s;
+    transition-duration: 3s;
     transition-timing-function: ease;
 }
 
@@ -106,6 +106,7 @@
 }
 
 .spinner-border {
+    width: 50px;
     position: absolute;
     z-index: 11;
     left: 50%;
