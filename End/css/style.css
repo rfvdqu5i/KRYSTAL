@@ -1,0 +1,462 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    height: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    padding: 0 20px;
+}
+
+.header .navbar {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.header .container nav {
+    height: 60px;
+}
+
+.header .logo {
+    height: 25px;
+}
+
+.header .collapse {
+    background: white;
+    z-index: 2;
+    padding-left: 20px;
+    transition-duration: 1s;
+}
+
+@keyframes slide-img {
+    0% {
+        background-image: url(../img/slide-01.jpg);
+    }
+
+    33% {
+        background-image: url(../img/slide-02.jpg);
+    }
+
+    66% {
+        background-image: url(../img/slide-03.jpg);
+    }
+
+    99% {
+        background-image: url(../img/slide-01.jpg);
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    animation-name: slide-img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.slide .jumbotron {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: auto;
+    background: transparent !important;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.slide .design {
+    width: inherit;
+    margin: 0 auto;
+}
+
+@keyframes example {
+    10% {
+        margin-top: 0px;
+    }
+
+    40% {
+        margin-top: -55px;
+    }
+
+    60% {
+        margin-top: -110px;
+    }
+
+    80% {
+        margin-top: -165px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+.slide .content {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slide .content .content-box {
+    height: auto;
+}
+
+.slide .content .content-box {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.hrr {
+    width: 70px;
+    margin: 0 auto;
+    height: 3px;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+.construction .container-fluid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.construction .card-deck {
+    margin: auto;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.map iframe {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.counter-box {
+    width: 100%;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+}
+
+.counter-box h1 {
+    color: #FFC925;
+}
+
+.counter-box p {
+    color: white;
+}
+
+@media all and (max-width: 991px) {
+    .counter-box {
+        height: 510px !important;
+    }
+}
+
+.parallax {
+    background-image: url(../img/parallaxxx.jpg);
+    /*    background-attachment: ;*/
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.parallax img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/*Filter*/
+
+.filtr-item img {
+    width: 100%;
+    height: auto;
+}
+
+.filtr-item {
+    padding: 0;
+}
+
+.filtr-container {
+    transition: height 500ms ease-out;
+}
+
+/*RECENT WORKS*/
+
+.recent {
+    margin: 0;
+    padding: 0;
+}
+
+.recent .jumbotron {
+    padding-bottom: 0;
+}
+
+.recent-menu {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.recent-menu ul {
+    list-style: none;
+}
+
+.recent-menu li {
+    display: inline;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.recent-menu li:hover {
+    color: white;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+.recent-menu .active {
+    color: white;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+
+.filter-img {
+    padding: 0;
+    margin: 0;
+}
+
+.filtr-container {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*OFFER*/
+
+.offer {
+    margin: 0;
+    padding: 0;
+}
+
+.offer-box {
+
+    padding: 0;
+}
+
+.offer-box .card {
+    padding: 0;
+    width: 130px;
+}
+
+.offer-box h6 {
+    font-size: 14px;
+    color: red;
+}
+
+.offer-box2-circle .fas {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/*SOURCE*/
+
+.source div {
+    padding: 20px 0;
+}
+
+/*FOOTER*/
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer li div {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.footer li div i {
+    width: 20px;
+    line-height: 60px;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+}
+
+.footer li div:hover {
+    border: 1px solid #FFC925;
+}
+
+/*QUOTE*/
+
+.quote {
+    padding: 0;
+    margin: 0;
+    background: #FFC925;
+    height: auto;
+}
+
+.quote .container {
+    padding: 20px 0;
+}
+
+.quote h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 100;
+}
+
+
+.quote .container div {
+    padding: 0;
+    margin: 0;
+}
+
+.quote button {
+    background: white;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin: 0;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+/* WHY */
+
+.why .jumbotron {
+    padding: 0;
+}
+
+.why .hrr {
+    float: left;
+}
+
+.why .accordion {
+    clear: both;
+}
+
+.why .card-header {
+    cursor: pointer;
+}
+
+/*OUR TEAM*/
+
+.our .card {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 576px) {
+    .display-6 {
+        font-size: 0px;
+    }
+
+    @keyframes example {
+        10% {
+            margin-top: 0px;
+        }
+
+        40% {
+            margin-top: -5px;
+        }
+
+        60% {
+            margin-top: -10px;
+        }
+
+        80% {
+            margin-top: -165px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    .slide .content {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .display-6 {
+        font-size: 45px;
+    }
+
+    @keyframes example {
+        10% {
+            margin-top: 0px;
+        }
+
+        40% {
+            margin-top: -55px;
+        }
+
+        60% {
+            margin-top: -110px;
+        }
+
+        80% {
+            margin-top: -165px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+    .slide .content {
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+    }
+}

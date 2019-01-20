@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/44.jpg");
+
+    /* Set a specific height */
+    height: 700px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header a {
+    font-weight: bold;
+    color: white !important;
+}
+
+.jumbotron-header {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.jumbotron-header hr {
+    width: 40px;
+    background: red;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.jumbotron-we {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.jumbotron-we hr {
+    width: 40px;
+    background: white;
+    margin: 0 auto;
+}
+
+.jumbotron-service {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+}
+
+.jumbotron-service hr {
+    width: 40px;
+    margin: 0 auto;
+}
+
+.box-ser {
+    text-align: center;
+}
+
+
+

@@ -4,7 +4,7 @@
 }
 
 .footer {
-    width: 100%;
+    margin: 0;
     font-size: 14px;
     color: white;
     padding-bottom: 40px;
@@ -15,9 +15,9 @@
     color: white;
 }
 
-#container {
-        
-    
+.table-woman {
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .box {
@@ -38,8 +38,51 @@
 .box-child {
     width: auto;
     background: light;
+    padding-left: 20px;
 }
 
+.col-right input {
+    margin-left: 10px;
+}
+
+.quality {
+    padding-left: 10px;    
+}
+
+.btn-shop {
+    height: 40px;
+    background: aqua;
+    color: white;
+    border: 0.1px solid aqua;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hinhanh p {
+    margin: 0;
+}
+
+.photo {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.photo div {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0.1px solid aqua;
+    width: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.photo p {
+    line-height: 70px;
+}
 
 
 

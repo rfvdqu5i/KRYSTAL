@@ -1,0 +1,601 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+
+.header {
+    height: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    padding: 0 20px;
+}
+
+.header .navbar {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.header .container nav {
+    height: 60px;
+}
+
+.header .logo {
+    height: 25px;
+}
+
+.header .collapse {
+    background: white;
+    z-index: 2;
+    padding-left: 20px;
+    transition-duration: 1s;
+}
+
+.nav-link {
+    transition-delay: 3s;
+    transition-timing-function: ease;
+}
+
+/*SLIDE*/
+
+@keyframes slide-img {
+    0% {
+        background-image: url(../img/slide-01.jpg);
+    }
+
+    33% {
+        background-image: url(../img/slide-02.jpg);
+    }
+
+    66% {
+        background-image: url(../img/slide-03.jpg);
+    }
+
+    99% {
+        background-image: url(../img/slide-01.jpg);
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    animation-name: slide-img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.slide .jumbotron {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: auto;
+    background: transparent !important;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.slide .design {
+    width: inherit;
+    margin: 0 auto;
+}
+
+.slide .btn {
+    color: white;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+.slide .btn:hover {
+    background: #252525;
+    border: 1px solid #252525;
+}
+
+.spinner-border {
+    position: absolute;
+    z-index: 11;
+    left: 50%;
+    bottom: 300px;
+    transform: translate(0, -50%);
+    background: red;
+}
+
+@keyframes example {
+    10% {
+        margin-top: 0px;
+    }
+
+    40% {
+        margin-top: -55px;
+    }
+
+    60% {
+        margin-top: -110px;
+    }
+
+    80% {
+        margin-top: -165px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+.slide .content {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.slide .content .content-box {
+    height: auto;
+}
+
+.slide .content .content-box {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+/*CONSTRUCTION*/
+
+.hrr {
+    width: 70px;
+    margin: 0 auto;
+    height: 3px;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+/*COUTER*/
+
+.counter-box {
+
+    height: 280px;
+    margin: 0;
+    padding: 0;
+}
+
+.counter-box h1 {
+    color: #FFC925;
+}
+
+.counter-box p {
+    color: white;
+}
+
+@media all and (max-width: 991px) {
+    .counter-box {
+        height: 510px !important;
+    }
+}
+
+.parallax {
+    background-image: url(../img/parallaxxx.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.parallax img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/*RECENT WORK*/
+
+.img-responsive {
+    padding: 0;
+    width: 100%;
+}
+
+.filtr-item {
+    padding: 0;
+    margin: 0;
+}
+
+.filtr-container {
+    transition: height 500ms ease-out;
+}
+
+.recent .jumbotron {
+    padding-bottom: 0;
+}
+
+.recent-menu {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.recent-menu ul {
+    list-style: none;
+}
+
+.recent-menu li {
+    display: inline;
+    padding: 1px 20px;
+    cursor: pointer;
+}
+
+.recent-menu li:hover {
+    color: white;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+.recent-menu .active {
+    color: white;
+    background: #FFC925;
+    border: 1px solid #FFC925;
+}
+
+.effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    height: 0%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    background: white;
+    display: none;
+}
+
+.filter-img .effect a {
+    font-size: 20px;
+    color: black;
+}
+
+.filter-img .effect a:hover {
+    color: #FFC925;
+}
+
+.filter:hover .effect {
+    display: block;
+    height: 30%;
+    transition-duration: 2s;
+    -webkit-transition: height 2s;
+}
+
+.img-responsive:hover {
+    cursor: pointer;
+}
+
+
+/*OFFER*/
+
+.offer .jumbotron {
+    padding-bottom: 0;
+}
+
+.offer {
+    margin: 0;
+    padding: 0;
+}
+
+.offer-box {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.offer-box .card {
+    padding: 0;
+    width: 140px;
+    margin-top: 10px;
+    color: #FFC925;
+    border: 1px solid #FFC925 !important;
+}
+
+.offer-box .card:hover {
+    color: white;
+    background: #FFC925 !important;
+}
+
+.offer-box h6 {
+    font-size: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.offer-box .h6 {
+    padding-top: 10px;
+}
+
+.offer-box2-circle .fas {
+    border: 1px solid #FFC925;
+    border-radius: 50%;
+    padding: 15px;
+    color: #FFC925;
+}
+
+.offer-box2-circle .fas:hover {
+    color: white;
+    background: #FFC925;
+}
+
+.offer-box2 a {
+    color: black;
+}
+
+.offer-box2 a:hover {
+    color: #FFC925;
+}
+
+/*QUOTE*/
+
+.quote {
+    padding: 0;
+    margin: 0;
+    background: #FFC925;
+    height: auto;
+}
+
+.quote .container {
+    padding: 20px 0;
+}
+
+.quote h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 100;
+}
+
+
+.quote .container div {
+    padding: 0;
+    margin: 0;
+}
+
+.quote button {
+    background: white;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin: 0;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.quote button:hover {
+    background: #252525;
+    color: white;
+    border: 1px solid #252525;
+}
+
+/*WHAT*/
+
+.what img {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.what .card-body {
+    margin-top: 40px;
+    width: 350px;
+    position: relative;
+}
+
+.what .name {
+    font-weight: bold;
+}
+/*WHY*/
+
+.why {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.why img {
+    width: 100%;
+}
+
+.why .jumbotron {
+    padding: 0;
+}
+
+.why .hrr {
+    float: left;
+}
+
+.why .accordion {
+    clear: both;
+}
+
+.why .card-header {
+    cursor: pointer;
+}
+
+.why h2 {
+    margin-top: 30px;
+}
+
+/*OUR TEAM*/
+
+.our .jumbotron {
+    padding-bottom: 0;    
+}
+
+.our .card {
+    margin: 30px 0;
+    padding: 0;
+    width: 250px;
+}
+
+.our .card-body {
+    padding-bottom: 0;
+}
+
+.our .card-text {
+    font-weight: bold;
+}
+
+/*MAP*/
+
+.map {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.map iframe {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+}
+
+/*CONTACT*/
+
+.contact input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    text-indent: 10px;
+}
+
+.contact input:last-child {
+    margin-bottom: 0;
+}
+
+.contact .col-lg-3 {
+    padding: 0;
+}
+
+.contact .btn {
+    color: white;
+    background: #FFC925;
+}
+
+.contact .btn:hover {
+    background: #252525;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+}
+
+/*SOURCE*/
+
+.source div {
+    padding: 20px 0;
+}
+
+/*FOOTER*/
+
+.footer {
+    padding: 100px 0;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer li div {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-right: 30px;
+}
+
+.footer li div i {
+    width: 20px;
+    line-height: 60px;
+}
+
+.footer img {
+    margin: 20px 0;
+    width: 200px;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+}
+
+.footer li div:hover {
+    border: 1px solid #FFC925;
+}
+
+@media all and (max-width: 991px) {
+    .content {
+        opacity: 0;
+    }
+    
+    .slide .our {
+        display: none;
+    }
+    
+    .counter-box {
+        height: 510px !important;
+    }
+
+    .offer-box .card {
+        padding: 0;
+        width: 100%;
+    }
+
+    .quote button {
+        margin-top: 10px;
+    }
+
+    .footer li div {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin-right: 10px;
+    }
+
+    .footer li div i {
+        width: 20px;
+        line-height: 45px;
+    }
+    
+    .contact .area {
+        margin-top: 40px;
+    }
+    
+    .what .card {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .offer-box2 .title {
+        text-align: center !important;
+    }
+
+
+}
